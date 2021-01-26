@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-cent{
+    width: 1924px;
+    height: 1080px;
+    margin: 0 auto;
+    background-image:url("../static/backimage.jpg");
+}
+.img-a{
+    width: 1924px;
+    height: 1080px;
+    /*z-index: 1;*/
+    background-color: rgba(0,0,0,0.6);
+}
+.cent-body{
+    width: 672px;
+    height: 838px;
+    background-color: white;
+    border-radius: 8px;
+    /*padding-left: 627px;*/
+    /*padding-top: 121px;*/
+}

@@ -1,0 +1,26 @@
+module.exports={
+    devServer:{
+        overlay:{//让浏览器overlay同时显示警告和错误
+            warnings:true,
+            errors:true
+        },
+        host:"localhost",
+        port:8083,//端口号
+        https:false,
+        open:false,//配置后自动启动浏览器
+        hotOnly:true,//热更新
+        //proxy:'http://localhost:8080'//配置跨区域处理，只有一个代理
+        proxy:{//配置多个代理http://8.136.5.55:8083
+            "/testIp":{
+                target:"http://8.136.5.55:8083",
+                changeOrigin:true,
+                ws:true,
+                secure:false,
+                pathRewrite:{
+                    "^/testIp":"/"
+                }
+            }
+
+        }
+    }
+}

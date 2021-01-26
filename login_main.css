@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+}
+#article{
+    position: relative;
+    width:1924px;
+    height: 1080px;
+    font-family: PingFang SC,"黑体";
+    /*background-color:  rgba(255,255,255,0.63);*/
+    opacity: 0.63;
+    background-repeat: no-repeat;
+}
+#login{
+
+    width: 672px;
+    height: 838px;
+    position: absolute;
+    left: 629px;
+    top: 121px;
+    color: rgba(80, 80, 80, 1);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+}
+.title{
+    color:#333333;
+    font-size: 50px;
+    line-height: 150%;
+    text-align: center;
+    font-weight: bold;
+    margin:100px auto 50px;
+}
+.active{
+    margin: 0px auto;
+    width: 528px;
+    height: 50px;
+    border-bottom: 1px solid rgba(153, 153, 153, 1);
+}
+.active:nth-of-type(3){
+    border:none;
+}
+.active img{
+    float: left;
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+}
+#sel{
+    width: 461px;
+    height: 45px;
+}
+.clear:after{
+    content:"";
+    clear: both;
+    display: block;
+}
+#userName{
+    width: 461px;
+    height: 45px;
+}
+#passWord{
+    width: 461px;
+    height: 45px;
+}
+input,select{
+    border:none;
+}
+#btn{
+    width: 528px;
+    height: 66px;
+
+    color: rgba(80, 80, 80, 1);
+    background-color: rgba(51, 125, 246, 1);
+    border-radius: 33px;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+}
