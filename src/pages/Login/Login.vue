@@ -7,12 +7,9 @@
                <div class="fromInput" >
                   <img src="../../../static/icon1.png" alt="">
                   <el-select v-model="value" placeholder="请选择身份登陆" class="aaa" :popper-append-to-body="true">
-
                         <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
-
                         </el-option>
                   </el-select>
-
                </div>
                <div class="fromInput">
                   <img src="../../../static/icon2.png" alt="">
