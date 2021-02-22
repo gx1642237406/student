@@ -24,7 +24,7 @@
                        :value="item.subjectId">
             </el-option>
           </el-select>
-          <div class="nameIcon">
+          <div class="margin">
             <el-input v-model="importName" palceholder="请输入姓名" class="input"
                       @change="arr"></el-input>
             <img src="../../../../static/图标 18.svg" width="25px" height="25px" class="icon" alt=""/>
@@ -379,15 +379,19 @@ export default {
   display: flex;
 }
 
-.icon {
-  position: absolute;
-  right: 8px;
-  top: 28px;
-}
-
-.nameIcon {
+.margin {
+  margin: 0px 50px 0px 50px;
   position: relative;
 }
+.margin img{
+  position: absolute;
+  z-index: 1000;
+  right: 10px;
+  top: 25px;
+}
+
+
+
 
 /deep/ .el-input__inner {
   border-radius: 24px;
@@ -478,14 +482,14 @@ export default {
 }
 
 
-  .ButtonB{
-    margin: 0 auto;
-    line-height: 45px;
-    text-align: center;
-    display: block;
-    width: 150px;
-    height: 45px;
-    border: 1px solid black;
-    background: #42b983;
-  }
+.ButtonB{
+  margin: 0 auto;
+  line-height: 45px;
+  text-align: center;
+  display: block;
+  width: 150px;
+  height: 45px;
+  border: 1px solid black;
+  background: #42b983;
+}
 </style>

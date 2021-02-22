@@ -14,8 +14,8 @@
           </el-option>
         </el-select>
         <div class="margin">
-          <el-input v-model="input" @change="selectStu()" placeholder="请输入姓名" class="input"></el-input>
           <img src="../../../../static/图标 18.svg" class="icon" width="20px" height="20px">
+          <el-input v-model="input" @change="selectStu()" placeholder="请输入姓名" class="input"></el-input>
         </div>
         <div>
           <el-button class="btn" @click="selectMsg">个人信息</el-button>
@@ -88,7 +88,7 @@
 
 <script>
 export default {
-name: "AllScores",
+  name: "AllScores",
   data() {
     return {
       options: [
@@ -181,9 +181,7 @@ name: "AllScores",
 
 /*放大镜定位*/
 .icon {
-  position: absolute;
-  left: 63%;
-  top: 107px;
+
 }
 /deep/ .el-input{
   width: 300px;
@@ -209,6 +207,13 @@ name: "AllScores",
 
 .margin {
   margin: 0px 50px 0px 50px;
+  position: relative;
+}
+.margin img{
+  position: absolute;
+  z-index: 1000;
+  left: 263px;
+  top: 10px;
 }
 
 .middle {
